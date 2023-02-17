@@ -27,6 +27,7 @@ In this section, you will compare two oversampling algorithms to determine which
 The balanced accuracy score is 0.655, this score is higher than 0.5 but still relatively low, suggesting that the model's predictions are somewhat accurate but not highly reliable.
 
 - The Classification report
+
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Naive%20Classification.png)
 
 
