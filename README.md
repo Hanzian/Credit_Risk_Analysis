@@ -30,5 +30,9 @@ The balanced accuracy score is 0.655, this score is higher than 0.5 but still re
 
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Naive%20Classification.png)
 
+- Precision: the precision for the "high_risk" class is very low (0.01), indicating that the model is not very good at identifying true positives for this class.
+
+- Recall: The recall for the "high_risk" class is higher (0.72), indicating that the model is better at finding the true positives for this class.
+
 
 
