@@ -18,9 +18,11 @@ After loading, spliting and training the dataset, we will use severals Machine L
 ## Delivrable 1
 
 ### Oversampling
+
 In this section, you will compare two oversampling algorithms to determine which algorithm results in the best performance. You will oversample the data using the naive random oversampling algorithm and the SMOTE algorithm.
 
 #### Naive Random Oversampling Algorithm
+
 - **The Balance accuracy**
 
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Naive%20Accuracy.png)
@@ -57,6 +59,8 @@ The balanced_accuracy_score for this prediction is 0.662, which indicates a mode
 
 #### Underampling
 
+In this section, you will test an undersampling algorithms to determine which algorithm results in the best performance compared to the oversampling algorithms above. You will undersample the data using the Cluster Centroids algorithm and complete the folliowing steps:
+
 - **The Balance accuracy**
 
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Undersampling%20Accuracy.png)
@@ -75,6 +79,8 @@ Recall: The recall for the "high_risk" class is 0.69, which is a significant imp
 
 #### Combination (Over and Under) Sampling
 
+In this section, you will test a combination over- and under-sampling algorithm to determine if the algorithm results in the best performance compared to the other sampling algorithms.
+
 - **The Balance accuracy**
 
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Combination%20Accuracy.png)
@@ -87,7 +93,38 @@ The balanced accuracy score for this result is 0.5442, which indicates a moderat
 
 The report shows that the model is still not performing well on the "high_risk" class, with very low precision and F1-score, indicating that the model is incorrectly labeling many high-risk samples as low-risk. The recall score for this class is higher, indicating that the model is correctly identifying a larger fraction of the high-risk samples, but there is still room for improvement. The specificity score for the "high_risk" class is also low, indicating that the model is incorrectly labeling many low-risk samples as high-risk, which is also contributing to the poor precision and F1-score for this class.
 
+### Delivrable 3
 
+#### Ensemble Learners
 
+In this section, you will compare two ensemble algorithms to determine which algorithm results in the best performance. You will train a Balanced Random Forest Classifier and an Easy Ensemble AdaBoost classifier.
+
+##### Balanced Random Forest Classifier
+
+**The Balance accuracy**
+
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Balanced%20Random%20Accuracy.png)
+
+The resulting score is 0.78, which means that the random forest classifier achieved a balanced performance on the test set.
+
+**The Classification report**
+
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Balanced%20Classification.png)
+
+The model's recall for the minority class (high risk) has improved to 70%, indicating that the model can better detect high-risk loans. Additionally, the precision and F1 score for the minority class have improved to 3% and 6%, respectively, which is a significant improvement over the original model's scores of 0.01% and 0.01%. Finally, the geometric mean has also improved, indicating that the model has improved in terms of overall performance. Overall, the updated classification report suggests that the new model has made significant improvements in detecting high-risk loans
+
+##### Easy Ensemble AdaBoost Classifier
+
+**The Balance accuracy**
+
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Easy%20Accuracy.png)
+
+The resulting score is 0.93, which means that the EE_model classifier achieved a high level of balanced performance on the test set. 
+
+**The Classification report**
+
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Easy%20Classification.png)
+
+The recall for the high-risk class has improved to 92%, which means that the model is able to detect almost all high-risk loans. Additionally, the precision for the high-risk class has improved to 9%, and the F1 score has improved to 16%, which are much better than the previous model's scores. The geometric mean has also improved, indicating that the model is performing well overall. The updated report suggests that the new model has made significant improvements in detecting high-risk loans and has very high accuracy in predicting the low-risk class.
 
 
