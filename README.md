@@ -88,7 +88,7 @@ In this section, you will test a combination over- and under-sampling algorithm 
 The balanced accuracy score for this result is 0.5442, which indicates a moderate level of performance. It suggests that the model is able to classify both the positive and negative classes with similar accuracy.
 
 - **The Classification report**
--
+
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Combination%20Classification.png)
 
 The report shows that the model is still not performing well on the "high_risk" class, with very low precision and F1-score, indicating that the model is incorrectly labeling many high-risk samples as low-risk. The recall score for this class is higher, indicating that the model is correctly identifying a larger fraction of the high-risk samples, but there is still room for improvement. The specificity score for the "high_risk" class is also low, indicating that the model is incorrectly labeling many low-risk samples as high-risk, which is also contributing to the poor precision and F1-score for this class.
