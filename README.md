@@ -127,4 +127,8 @@ The resulting score is 0.93, which means that the EE_model classifier achieved a
 
 The recall for the high-risk class has improved to 92%, which means that the model is able to detect almost all high-risk loans. Additionally, the precision for the high-risk class has improved to 9%, and the F1 score has improved to 16%, which are much better than the previous model's scores. The geometric mean has also improved, indicating that the model is performing well overall. The updated report suggests that the new model has made significant improvements in detecting high-risk loans and has very high accuracy in predicting the low-risk class.
 
+# Summary
 
+After reviewing all the results of our analysis, the Easy Ensemble AdaBoost Classifier outperforms the other models tested. The Ensemble Classifier had a higher balanced accuracy score of 0.93 compared to the Balanced Random Forest Classifier (0.79), the Naive Random Oversampling Algorithm (0.655), SMOTE Oversampling (0.662), ClusterCentroids Undersampling (0.54), and Combination (Over and Under) Sampling (0.63).
+
+The recall rate for the high-risk category for Easy Ensemble AdaBoost Classifier was significantly higher at 0.92. Therefore, we recommend using the Easy Ensemble AdaBoost Classifier to predict high-risk loans.
