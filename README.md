@@ -9,6 +9,10 @@ To complete this analysis, we use different `Machine Learning` techniques to tra
 
 # Results
 
+The original dataset contained 115,675 loan applications in Q1 of 2019. We used the "loan status" to determine whether the application was considered "low" or "high" risk. Applications that had "current" as the "loan status" were classified as "low risk" and the remaining as "high risk". This reduced the dataset to 68,817 total applications with 99% classified as "low risk".
+
+![Loans](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Loans%20Statuts.png)
+
 After loading, spliting and training the dataset, we will use severals Machine Learning model to predict high and low risk labels.
 
 ## Oversampling
