@@ -35,7 +35,10 @@ The balanced accuracy score is 0.655, this score is higher than 0.5 but still re
 
 - Recall: The recall for the "high_risk" class is higher (0.72), indicating that the model is better at finding the true positives for this class.
 
+### Delivrable 2
+
 #### SMOTE Oversampling
+
 - **The Balance accuracy**
 
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/SMOTE%20Accuracy.png)
@@ -51,6 +54,38 @@ The balanced_accuracy_score for this prediction is 0.662, which indicates a mode
 - Recall: The recall for the "high_risk" class has improved to 0.63, which is a significant improvement over the previous set of metrics.
 
 - F1 score: The F1 score for the "high_risk" class has improved to 0.02, which is consistent with the previous set of metrics.
+
+#### Underampling
+
+- **The Balance accuracy**
+
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Undersampling%20Accuracy.png)
+
+A balanced accuracy score of 0.54 indicates that the model is only slightly better than random chance at predicting the target variable. It suggests that the model may not be well-suited to the task, and further evaluation may be needed to identify the reasons for the poor performance.
+
+- **The Classification report**
+
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Undersampling%20Classification.png)
+
+- Precision:  the precision for the "high_risk" class is very low at 0.01, indicating that the model is not very good at identifying true positives for this class.
+
+Recall: The recall for the "high_risk" class is 0.69, which is a significant improvement over the previous set of metrics.
+
+- F1 score: The F1 score for the "high_risk" class has decreased to 0.01, indicating poor performance on this class.
+
+#### Combination (Over and Under) Sampling
+
+- **The Balance accuracy**
+
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Combination%20Accuracy.png)
+
+The balanced accuracy score for this result is 0.5442, which indicates a moderate level of performance. It suggests that the model is able to classify both the positive and negative classes with similar accuracy.
+
+- **The Classification report**
+-
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Combination%20Classification.png)
+
+The report shows that the model is still not performing well on the "high_risk" class, with very low precision and F1-score, indicating that the model is incorrectly labeling many high-risk samples as low-risk. The recall score for this class is higher, indicating that the model is correctly identifying a larger fraction of the high-risk samples, but there is still room for improvement. The specificity score for the "high_risk" class is also low, indicating that the model is incorrectly labeling many low-risk samples as high-risk, which is also contributing to the poor precision and F1-score for this class.
 
 
 
