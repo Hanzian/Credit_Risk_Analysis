@@ -15,9 +15,19 @@ The original dataset contained 115,675 loan applications in Q1 of 2019. We used 
 
 After loading, spliting and training the dataset, we will use severals Machine Learning model to predict high and low risk labels.
 
-## Oversampling
+## Delivrable 1
+
+### Oversampling
 In this section, you will compare two oversampling algorithms to determine which algorithm results in the best performance. You will oversample the data using the naive random oversampling algorithm and the SMOTE algorithm.
 
-### Naive Random Oversampling Algorithm
+#### Naive Random Oversampling Algorithm
+_ The Balance accuracy
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Naive%20Accuracy.png)
+
+The balanced accuracy score is 0.655, this score is higher than 0.5 but still relatively low, suggesting that the model's predictions are somewhat accurate but not highly reliable.
+
+- The Classification report
+![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Naive%20Classification.png)
+
 
 
