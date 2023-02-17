@@ -21,12 +21,13 @@ After loading, spliting and training the dataset, we will use severals Machine L
 In this section, you will compare two oversampling algorithms to determine which algorithm results in the best performance. You will oversample the data using the naive random oversampling algorithm and the SMOTE algorithm.
 
 #### Naive Random Oversampling Algorithm
-- The Balance accuracy
+- **The Balance accuracy**
+
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Naive%20Accuracy.png)
 
 The balanced accuracy score is 0.655, this score is higher than 0.5 but still relatively low, suggesting that the model's predictions are somewhat accurate but not highly reliable.
 
-- The Classification report
+- **The Classification report**
 
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/Naive%20Classification.png)
 
@@ -35,13 +36,13 @@ The balanced accuracy score is 0.655, this score is higher than 0.5 but still re
 - Recall: The recall for the "high_risk" class is higher (0.72), indicating that the model is better at finding the true positives for this class.
 
 #### SMOTE Oversampling
-- The Balance accuracy
+- **The Balance accuracy**
 
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/SMOTE%20Accuracy.png)
 
 The balanced_accuracy_score for this prediction is 0.662, which indicates a moderate level of accuracy in correctly classifying both the high-risk and low-risk classes. It is slightly higher than the previous result of 0.655, which is a positive indication that the model is improving in its performance.
 
-- The Classification report
+- **The Classification report**
 
 ![](https://github.com/Hanzian/Credit_Risk_Analysis/blob/main/Images/SMOTE%20Classification.png)
 
